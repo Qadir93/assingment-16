@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LaunchPage</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+    
+        body {
+            font-family: Arial, sans-serif;
+        }
+    
+        .portfolio img { 
+            width: 100%; height: auto; border-radius: 5px; 
+            
+        }
+        .team-card img { 
+            width: 100%; border-radius: 5px; 
+            
+        }
+        .agency-section { 
+            background-color: #d9534f; color: white; padding: 50px 0; text-align: center; 
+            
+        }
+        .agency-section .btn { 
+            margin: 10px; 
+            
+        }
+        
+        
+        .hero {
+            background: url('./women_leading_office_project_group.jpg') center/cover;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+            position: relative;
+        }
+        .hero .overlay {
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .hero .content {
+            position: relative;
+            z-index: 2;
+        }
+        .feature-box {
+            text-align: center;
+            padding: 30px;
+        }
+        .feature-box i {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+        .cta-section {
+            padding: 50px 20px;
+        }
+        
+        .fun-facts {
+            background-color: #d93939;
+            color: white;
+            padding: 50px 0;
+            text-align: center;
+        }
+        .testimonial-card {
+            border-left: 4px solid #28a745;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        .stars {
+            color: gold;
+        }
+        
+        
+        .contact-form {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            background-color: #d9534f;
+            color: white;
+            text-align: center;
+        
+        }
+        .form-control {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: none;
+        }
+        .form-control::placeholder {
+            color: white;
+        }
+        .btn-custom {
+            background-color: white;
+            color: #d9534f;
+            border: none;
+        }
+        .btn-custom:hover {
+            background-color: #f8f9fa;
+        }
+        .footer {
+            margin-top: 30px;
+            font-size: 14px;
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-danger" href="#">LaunchPage</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="overlay"></div>
+        <div class="content">
+            <h1 class="display-5 fw-bold">Welcome To LaunchPage</h1>
+            <p class="lead">Excepteur sint occaecat cupidatat non proident, vante nislat officiatum.</p>
+            <div class="input-group w-50 mx-auto">
+                <input type="email" class="form-control" placeholder="Enter Your Email Address">
+                <button class="btn btn-danger">Get Started</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section class="container text-center my-5">
+        <h2 class="fw-bold">What We Do</h2>
+        <p>Discover how our amazing team can help your business.</p>
+        <div class="row">
+            <div class="col-md-4 feature-box">
+                <i class="fa-solid fa-chart-column" style="color: #74C0FC;"></i>
+                <h4>Google Analytics</h4>
+                <p>Curabitur quam etsum lacus net nulum nulat estium.</p>
+            </div>
+            <div class="col-md-4 feature-box">
+                <i class="fa-regular fa-heart" style="color: #dc041a;"></i>
+                <h4>Brand Awareness</h4>
+                <p>Curabitur quam etsum lacus net nulum nulat estium.</p>
+            </div>
+            <div class="col-md-4 feature-box">
+                <i class="fa-solid fa-anchor" style="color: #0c9d71;"></i>
+                <h4>Graphic Design</h4>
+                <p>Curabitur quam etsum lacus net nulum nulat estium.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Business Growth Section -->
+    <section class="container my-5 d-flex align-items-center">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="./discover.webp" class="img-fluid rounded" alt="Business Meeting">
+            </div>
+            <div class="col-md-6">
+                <h3 class="fw-bold">Discover how we can help you to grow your business fast.</h3>
+                <p>Velis demo enim ipsum voluptatem quia voluptas sit aspernatur net lorem fug.</p>
+                <ul class="list-unstyled">
+                    <li>✔ Quis netus magni netus eos qui ratione sequi.</li>
+                    <li>✔ Venis ratione sequi netus enim quia tempor magni.</li>
+                    <li>✔ Enim ipsam netus voluptatem quia voluptas.</li>
+                </ul>
+                <button class="btn btn-danger">Discover More</button>
+            </div>
+        </div>
+    </section>
+
+<!-- Workflow Section -->
+<div class="container py-5">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="mb-4 p-3 shadow-sm bg-light rounded">
+                <img src="" alt="" class="me-3">
+                <h5><strong>Customize your workflow.</strong></h5>
+                <p>Manage any process and be ready to address any challenge with total ease.</p>
+            </div>
+            <div class="mb-4 p-3 shadow-sm bg-light rounded">
+                <img src="" alt="" class="me-3">
+                <div>
+                    <h6><strong>Easy onboarding, fast adoption.</strong></h6>
+                    <p>With Square, getting your team on board is as simple as sending an email.</p>
+                </div>
+            </div>
+            <div class="mb-4 p-3 shadow-sm bg-light rounded">
+                <img src="." alt="" class="me-3">
+                <div>
+                    <h6><strong>Improve subscriber retention.</strong></h6>
+                    <p>Analyze customers by region, discounts, and more, and put a plan in place.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 text-center">
+            <img src="./discover2.webp" alt="Team" class="img-fluid rounded">
+        </div>
+    </div>
+</div>
+
+<!-- Fun Facts Section -->
+<div class="fun-facts">
+    <h2>Fun Facts About Our Agency</h2>
+    <div class="row mt-4">
+        <div class="col-md-3">
+            <h4>1050+</h4>
+            <p>Projects Completed</p>
+        </div>
+        <div class="col-md-3">
+            <h4>217k</h4>
+            <p>Happy Clients</p>
+        </div>
+        <div class="col-md-3">
+            <h4>1210</h4>
+            <p>Design Awards</p>
+        </div>
+        <div class="col-md-3">
+            <h4>2137</h4>
+            <p>Lines of Code</p>
+        </div>
+    </div>
+</div>
+
+<!-- Testimonials Section -->
+<div class="container py-5">
+    <h2>What People Are Saying.</h2>
+    <p>Quis autem velis ets reprehender net etid quiste nets voluptate.</p>
+
+    <div class="d-flex">
+        <p class="me-2">TrustPilot</p>
+        <div class="stars"><i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+            <i class="fa-solid fa-star" style="color: #FFD43B;"></i></div>
+        <p class="ms-4 me-2">Feefo</p>
+        <div class="stars"><i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+            <i class="fa-solid fa-star" style="color: #FFD43B;"></i></div>
+    </div>
+
+    <div class="testimonial-card">
+        <p><em>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut...</em></p>
+        <strong>Alexandra Smith</strong> / Manager - SmartCoders
+    </div>
+
+    <div class="testimonial-card">
+        <strong>John Doe</strong> / CEO - Epic Design
+    </div>
+
+    <div class="testimonial-card">
+        <strong>Christina Pages</strong> / Designer - New Fashion
+    </div>
+</div>
+
+<!-- Portfolio Section -->
+<section class="container text-center my-5">
+    <h2 class="fw-bold">Our <span class="text-primary">Portfolio</span></h2>
+    <p>Discover the latest projects accomplished for my clients.</p>
+    <div class="row g-3">
+        <div class="col-md-4 portfolio"><img src="./gallery1.webp" alt="Project 1"></div>
+        <div class="col-md-4 portfolio"><img src="./gallery2.webp" alt="Project 2"></div>
+        <div class="col-md-4 portfolio"><img src="./gallery4.webp" alt="Project 3"></div>
+    </div>
+</section>
+
+<!-- Team Section -->
+<section class="container text-center my-5">
+    <h2 class="fw-bold">Meet <span class="text-primary">Our Team</span></h2>
+    <p>Discover more about our high-performing team.</p>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card team-card">
+                <img src="./team001.webp" alt="Christina Hawkins">
+                <div class="card-body">
+                    <h5 class="card-title">CHRISTINA HAWKINS</h5>
+                    <p class="text-muted">Head of SEO</p>
+                    <p>Johnathan is our co-founder and has developed search strategies for clients for over 5 years.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card team-card">
+                <img src="./team002.webp" alt="Andres Johanson">
+                <div class="card-body">
+                    <h5 class="card-title">ANDRES JOHANSON</h5>
+                    <p class="text-muted">Marketing Manager</p>
+                    <p>Andres fell in love with marketing at school and looks forward to being part of the industry for years.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card team-card">
+                <img src="./team003.webp" alt="Alexandra Smiths">
+                <div class="card-body">
+                    <h5 class="card-title">ALEXANDRA SMITHS</h5>
+                    <p class="text-muted">SEO Specialist</p>
+                    <p>Graduating with a degree in Spanish, English, and French, she has always loved writing.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Award-Winning Agency Section -->
+<section class="agency-section">
+    <div class="container">
+        <h2 class="fw-bold">Award-Winning Agency</h2>
+        <p>Utise wisi enim minim veniam, quis et stationes ullamcorper nets suscipit et lobotis nisle consequat nihil.</p>
+        <a href="#" class="btn btn-light">Discover More</a>
+        <a href="#" class="btn btn-outline-light">Get In Touch</a>
+    </div>
+</section>
+
+<!-- Amazing Features Section -->
+<div class="container text-center py-5">
+    <h2 class="fw-bold">Amazing Features</h2>
+    <p class="text-muted">Quis autem velis ets reprehender net etid quiste voluptate.</p>
+    <div class="row g-4 mt-4">
+        <div class="col-md-4">
+            <div><img src="./images sup.png" alt="Support 24/7"></div>
+            <h5 class="mt-3 fw-bold">Support 24/7</h5>
+            <p class="text-muted">Utise wisi enim minim veniamis.</p>
+        </div>
+        <div class="col-md-4">
+            <div><img src="./user.png" alt="User Friendly"></div>
+            <h5 class="mt-3 fw-bold">User Friendly</h5>
+            <p class="text-muted">Utise wisi enim minim veniamis.</p>
+        </div>
+        <div class="col-md-4">
+            <div><img src="./notify.png" alt="Notifications"></div>
+            <h5 class="mt-3 fw-bold">Notifications</h5>
+            <p class="text-muted">Utise wisi enim minim veniamis.</p>
+        </div>
+        <div class="col-md-4">
+            <div><img src="./acces.png" alt="Accessibility"></div>
+            <h5 class="mt-3 fw-bold">Accessibility</h5>
+            <p class="text-muted">Utise wisi enim minim veniamis.</p>
+        </div>
+        <div class="col-md-4">
+            <div><img src="./piggy.png" alt="Cost Control"></div>
+            <h5 class="mt-3 fw-bold">Cost Control</h5>
+            <p class="text-muted">Utise wisi enim minim veniamis.</p>
+        </div>
+        <div class="col-md-4">
+            <div><img src="./chat.png" alt="Chat With Friends"></div>
+            <h5 class="mt-3 fw-bold">Chat With Friends</h5>
+            <p class="text-muted">Utise wisi enim minim veniamis.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Pricing Section -->
+<div class="pricing-section">
+    <div class="container text-center">
+        <h2 class="fw-bold">Great pricing plans tailored to your needs.</h2>
+        <p class="text-muted">Choose a plan that fits your budget.</p>
+        <div class="row justify-content-center g-4">
+            <div class="col-md-4">
+                <div class="pricing-card">
+                    <h4>MONTHLY</h4>
+                    <h2 class="fw-bold">$19</h2>
+                    <p>Per Month</p>
+                    <button class="btn btn-primary">GET STARTED</button>
+                    <p class="text-muted mt-2">First two weeks free.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="pricing-card annual">
+                    <h4>ANNUALLY</h4>
+                    <h2 class="fw-bold">$29</h2>
+                    <p>Per Year</p>
+                    <button class="btn btn-light">GET STARTED</button>
+                    <p class="mt-2">Save 45% with this plan.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- FAQ Section -->
+<div class="faq-section">
+    <div class="container">
+        <h2 class="text-center fw-bold">Frequently Asked Questions</h2>
+        <p class="text-center text-muted">Find answers to your most common questions.</p>
+        <div class="accordion mt-4" id="faqAccordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                        Velit ut tortizi pretium viverra suspendisse?
+                    </button>
+                </h2>
+                <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">Utise wisi enim minim veniam...</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                        Nibh sit amet aliquam commodo?
+                    </button>
+                </h2>
+                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">Utise wisi enim minim veniam...</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                        Maecenas volutpat blandit etiam?
+                    </button>
+                </h2>
+                <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">Utise wisi enim minim veniam...</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                        Elementum curabitur vitae?
+                    </button>
+                </h2>
+                <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">Utise wisi enim minim veniam...</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <div class="container">
+        <div class="contact-form">
+            <h2>Contact Us</h2>
+            <p>Have any queries? Get in touch today.</p>
+            <form>
+                <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="Your Name*" required>
+                </div>
+                <div class="mb-3">
+                    <input type="email" class="form-control" placeholder="Email Address*" required>
+                </div>
+                <div class="mb-3">
+                    <input type="tel" class="form-control" placeholder="Phone Number*" required>
+                </div>
+                <div class="mb-3">
+                    <select class="form-control">
+                        <option selected>Choose Option</option>
+                        <option>General Inquiry</option>
+                        <option>Support</option>
+                        <option>Feedback</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <textarea class="form-control" rows="4" placeholder="Your Message..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-custom w-100">GET IN TOUCH</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>© 2025 <strong>LaunchPage</strong>. Designed by <a href="#" class="text-blue">A Qadir Khan</a></p>
+        <p>Follow us: 
+            <a href="#"><i class="fa-brands fa-twitter" style="color: #74C0FC;"></i></a>
+            <a href="#"><i class="fa-brands fa-pinterest" style="color: #e1051b;"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook" style="color: #0f58d7;"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram" style="color: #e23af8;"></i></a>
+        </p>
+    </div>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
